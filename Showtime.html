@@ -99,36 +99,38 @@
         </header>
       </div>
     <div>
+      <table>
+        <tr>
+          <td style="width: 120px; height: 40px;"><a href="Showtime.html"><span id="today"></span></a></td>
+          <td style="width: 120px; height: 40px;"><a href="Showtime.html"><span id="tomorrow"></span></a></td>
+          <td style="width: 120px; height: 40px;"><a href="Showtime.html"><span id="day-after-tomorrow"></span></a></td>
+        </tr>
+    </table>
         <script>
-            function printDates() {
-              var today = new Date();
-              var tomorrow = new Date();
-              tomorrow.setDate(today.getDate() + 1);
-              var dayAfterTomorrow = new Date();
-              dayAfterTomorrow.setDate(today.getDate() + 2);
-              
-              var monthNames = [
-                "January", "February", "March", "April", "May", "June", "July",
-                "August", "September", "October", "November", "December"
-              ];
-              
-              var todayFormatted = monthNames[today.getMonth()] + " " + today.getDate() + ", " + today.getFullYear();
-              var tomorrowFormatted = monthNames[tomorrow.getMonth()] + " " + tomorrow.getDate() + ", " + tomorrow.getFullYear();
-              var dayAfterTomorrowFormatted = monthNames[dayAfterTomorrow.getMonth()] + " " + dayAfterTomorrow.getDate() + ", " + dayAfterTomorrow.getFullYear();
-              
-              document.getElementById("today").innerHTML = todayFormatted;
-              document.getElementById("tomorrow").innerHTML = tomorrowFormatted;
-              document.getElementById("day-after-tomorrow").innerHTML = dayAfterTomorrowFormatted;
-            }
-          </script>
-        <table>
-            <tr>
-              <td style="width: 120px; height: 40px;"><a href="Showtime.html">May 31, 2023<span id="today"></span></a></td>
-              <td style="width: 120px; height: 40px;"><a href="Showtime.html">June 01, 2023<span id="tomorrow"></span></a></td>
-              <td style="width: 120px; height: 40px;"><a href="Showtime.html">June 02, 2023<span id="day-after-tomorrow"></span></a></td>
-            </tr>
-        </table>
-      <h2></h2>
+    function printDates() {
+      var today = new Date();
+      var tomorrow = new Date();
+      tomorrow.setDate(today.getDate() + 1);
+      var dayAfterTomorrow = new Date();
+      dayAfterTomorrow.setDate(today.getDate() + 2);
+      
+      var monthNames = [
+        "January", "February", "March", "April", "May", "June", "July",
+        "August", "September", "October", "November", "December"
+      ];
+      
+      var todayFormatted = monthNames[today.getMonth()] + " " + today.getDate() + ", " + today.getFullYear();
+      var tomorrowFormatted = monthNames[tomorrow.getMonth()] + " " + tomorrow.getDate() + ", " + tomorrow.getFullYear();
+      var dayAfterTomorrowFormatted = monthNames[dayAfterTomorrow.getMonth()] + " " + dayAfterTomorrow.getDate() + ", " + dayAfterTomorrow.getFullYear();
+      
+      document.getElementById("today").innerHTML = todayFormatted;
+      document.getElementById("tomorrow").innerHTML = tomorrowFormatted;
+      document.getElementById("day-after-tomorrow").innerHTML = dayAfterTomorrowFormatted;
+    }
+
+    // Call the function to display the dates
+    printDates();
+  </script>
       <table>
         <hr>
         <h3>Platinum Movietime Cinemas</h3>
