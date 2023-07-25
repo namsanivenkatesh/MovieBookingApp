@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="getmyshowlogo.png" type="image/x-icon">
+    <title>Showtime | GetMyShow</title>
+    <style>
+      table {
+        border-collapse: separate;
+        border-spacing: 20px 0;
+      }
+      td {
+        background-color: white;
+        color: black;
+      }
+      td,
+      tr {
+        width: 150px;
+        text-align: center;
+        border: 1px solid greenyellow;
+        padding: 5px;
+      }
+    body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+    background-color: #ff3f5a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+    </style>
+</head>
+  
+  <body>
+    <div>
+      <header>
+        <div class="logo">
+          <a href="Get%20Myshow.html"><img src="getphotos\getmyshowlogo.png" alt="GetMyShow Logo" style="border-radius: 0%;"></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search for movies, events, plays...">
+          <button type="submit">Search</button>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="Movies.html">Movies</a></li>
+            <li><a href="PopularEvents.html">Events</a></li>
+            <li><a href="Plays.html">Plays</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Offers</a></li>
+          </ul>
+        </nav>
+        </header>
+      </div>
+    <div>
+        <script>
+            function printDates() {
+              var today = new Date();
+              var tomorrow = new Date();
+              tomorrow.setDate(today.getDate() + 1);
+              var dayAfterTomorrow = new Date();
+              dayAfterTomorrow.setDate(today.getDate() + 2);
+              
+              var monthNames = [
+                "January", "February", "March", "April", "May", "June", "July",
+                "August", "September", "October", "November", "December"
+              ];
+              
+              var todayFormatted = monthNames[today.getMonth()] + " " + today.getDate() + ", " + today.getFullYear();
+              var tomorrowFormatted = monthNames[tomorrow.getMonth()] + " " + tomorrow.getDate() + ", " + tomorrow.getFullYear();
+              var dayAfterTomorrowFormatted = monthNames[dayAfterTomorrow.getMonth()] + " " + dayAfterTomorrow.getDate() + ", " + dayAfterTomorrow.getFullYear();
+              
+              document.getElementById("today").innerHTML = todayFormatted;
+              document.getElementById("tomorrow").innerHTML = tomorrowFormatted;
+              document.getElementById("day-after-tomorrow").innerHTML = dayAfterTomorrowFormatted;
+            }
+          </script>
+        <table>
+            <tr>
+              <td style="width: 120px; height: 40px;"><a href="Showtime.html">May 31, 2023<span id="today"></span></a></td>
+              <td style="width: 120px; height: 40px;"><a href="Showtime.html">June 01, 2023<span id="tomorrow"></span></a></td>
+              <td style="width: 120px; height: 40px;"><a href="Showtime.html">June 02, 2023<span id="day-after-tomorrow"></span></a></td>
+            </tr>
+        </table>
+      <h2></h2>
+      <table>
+        <hr>
+        <h3>Platinum Movietime Cinemas</h3>
+        <tr>
+          <td><a href="seating%20plan.html">8:00</a></td>
+          <td><a href="seating%20plan.html">11:00</a></td>
+          <td><a href="seating%20plan.html">2:00</a></td>
+          <td><a href="seating%20plan.html">5:00</a></td>
+          <td><a href="seating%20plan.html">8:00</a></td>
+          <td><a href="seating%20plan.html">11:00</a></td>
+        </tr>
+      </table>
+      <table>
+        <hr>
+        <h3>Gokul 70MM</h3>
+        <tr>
+          <td><a href="seating%20plan.html">8:00</a></td>
+          <td><a href="seating%20plan.html">11:00</a></td>
+          <td><a href="seating%20plan.html">2:00</a></td>
+          <td><a href="seating%20plan.html">5:00</a></td>
+          <td><a href="seating%20plan.html">8:00</a></td>
+          <td><a href="seating%20plan.html">11:00</a></td>
+        </tr>
+      </table>
+      <table>
+        <hr>
+        <h3>Asian Mukta Cinemas A2</h3>
+        <tr>
+          <td><a href="seating%20plan.html">8:00</a></td>
+          <td><a href="seating%20plan.html">11:00</a></td>
+          <td><a href="seating%20plan.html">2:00</a></td>
+          <td><a href="seating%20plan.html">5:00</a></td>
+          <td><a href="seating%20plan.html">8:00</a></td>
+          <td><a href="seating%20plan.html">11:00</a></td>
+        </tr>
+      </table>
+      <table>
+        <hr>
+        <h3>SV Cinesquare</h3>
+        <tr>
+          <td><a href="seating%20plan.html">8:00</a></td>
+          <td><a href="seating%20plan.html">11:00</a></td>
+          <td><a href="seating%20plan.html">2:00</a></td>
+          <td><a href="seating%20plan.html">5:00</a></td>
+          <td><a href="seating%20plan.html">8:00</a></td>
+          <td><a href="seating%20plan.html">11:00</a></td>
+        </tr>
+      </table>
+      <table>
+        <hr>
+        <h3>Super Cinema</h3>
+        <tr>
+          <td><a href="seating%20plan.html">8:00</a></td>
+          <td><a href="seating%20plan.html">11:00</a></td>
+          <td><a href="seating%20plan.html">2:00</a></td>
+          <td><a href="seating%20plan.html">5:00</a></td>
+          <td><a href="seating%20plan.html">8:00</a></td>
+          <td><a href="seating%20plan.html">11:00</a></td>
+        </tr>
+      </table>
+      <table>
+        <hr>
+        <h3>Prasads Multiplex</h3>
+        <tr>
+          <td><a href="seating%20plan.html">8:00</a></td>
+          <td><a href="seating%20plan.html">11:00</a></td>
+          <td><a href="seating%20plan.html">2:00</a></td>
+          <td><a href="seating%20plan.html">5:00</a></td>
+          <td><a href="seating%20plan.html">8:00</a></td>
+          <td><a href="seating%20plan.html">11:00</a></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <footer style="background-color: #333; color:grey">
+    <h4>MOVIES NOW SHOWING IN HYDERABAD</h4>
+    <h5>Bichagadu 2 | Fast X | Anni Manchi Sakunamule | The Kerala Story | Mem Famous | 2018 | Custody | Virupaksha | Simhadri(Telugu) |Gaurdians of The Galaxy Vol. 3</h5>
+    <h4>UPCOMING MOVIES IN HYDERABAD</h4>
+    <h5>IPL Live Screening Eliminator LSG vs MI | T(Odia) | Welcome Purnima | Abar Bibaho Obhijaan | Siren | Aazam | Pyara Kulhad | Pirkilu | Ulta Pulta | Jaishree Krishh | Auhaam | Live(Malayalam) | About My Father | Modala Male | Gill Saab Scooter Wale | Picasso | Godday Godday Chaa | Naad Ekach Fakt Bailgada Sharyat | Chhipkali | Missing Girl</h5>
+    <h4>PLAYS BY GENRE IN HYDERABAD</h4>
+    <h5>Comedy Plays | Action Plays | Contemporary Plays | Adaptation Plays | Mythological Plays | Noir Plays | Online Streaming Plays | Political Plays | Tribute Plays | Sci-Fi plays | Suspense Plays | Historical Plays | Thriller Plays | Tragedy Plays | Horror Plays | Psychological Plays | Mystrey Plays | Romantic Plays | Audit Plays | Broadway Plays | Biography Plays | War Plays | Period Plays | Fantasy Plays | Adventure Plays | Classic Plays | Drama Plays | Musical Plays | Regional Plays</h5>
+    <h4>MOVIE REVIEWS AND TRENDING ARTICLES</h4>
+    <h5>Trending Articles | Latest News on Movies, Events, Plays and Sports | Movie Celebrities</h5>
+    <h4>MOVIE UPDATES AND CELEBRITIES</h4>
+    <h5>Upcoming Movies | Movies Now Showing | Movie Celebrities</h5>
+    <h4>THINGS TO DO IN HYDERABAD</h4>
+    <h5>Adventure | Amusement Parks | Festivals | Durga Puja Festival | Food and Drinks | Holi Parties | Antiques, Heritage, Museums | Christmas Celebrations | Hilsa Festival | Gaming | Hospitals | Poila Baishakh Festival | Parties | Unique Tours | Navratri | Quizzes and Competitions | Shops and Malls | Tourist Attractions | Monuments | Nightlife | Valentine's Day Celebrations</h5>
+    <h4>SPORTS EVENTS IN HYDERABAD</h4>
+    <h5>Online Games | Chess | E Sports | Online Sports | Athletics | Archery | Baseball | Badminton | Cycling | Golf | Kickboxing | Boat Race | Boxing | Card Games | Cricket | Derby Horse Race | Football | kabaddi | Mixed Martial Arts | Muay Thai | Swimming | Pool | Rugby | Hockey | Ice Skating | Judo | Triathlon | Motorsports | Walking | Shooting | Running | Tennis | Wrestling | Sailing | Snooker | Basketball | Bowling | Polo | Volleyball | Table Tennis | Weight Lifting</h5>
+    <h4>EVENTS IN HYDERABAD</h4>
+    <h5>Comedy Shows | Workshops | Music Shows | Kids | Spirituality | Meetups | Conferences | Exhibitions | Screening | Talks | Beer Festival | Celebrity Wishes | Award Shows | Online Streaming Events | Vaccination | New Year Parties</h5>
+    <h4>CINEMAS IN TOP CITIES</h4>
+    <h5>Cinemas in Mumbai | Cinemas in Delhi-NCR | Cinemas in Chennai | Cinemas in Bengaluru | Cinemas in Hyderabad | Cinemas in Pune | Cinemas in Ahmedabad | Cinemas in Kolkata | Cinemas in Kochi</h5>
+    <h4>EVENTS IN TOP CITIES</h4>
+    <h5>Events in Mumbai | Events in Delhi-NCR | Events in Chennai | Events in Bengaluru | Events in Hyderabad | Events in Pune | Events in Ahmedabad | Events in Kolkata | Events in Kochi</h5>
+    <h4>PLAYS IN TOP CITIES</h4>
+    <h5>Plays in Mumbai | Plays in Delhi-NCR | Plays in Chennai | Plays in Bengaluru | Plays in Hyderabad | Plays in Pune | Plays in Ahmedabad | Plays in Kolkata | Plays in Kochi</h5>
+    <h4>ACTIVITIES IN TOP CITIES</h4>
+    <h5>Things to do in Mumbai | Things to do in Delhi-NCR | Things to do in Chennai | Things to do in Bengaluru | Things to do in Hyderabad | Things to do in Pune | Things to do in Ahmedabad | Things to do in Kolkata | Things to do in Kochi</h5>
+    <h4>MOVIES IN TOP CITIES</h4>
+    <h5>Movies in Mumbai | Movies in Delhi-NCR | Movies in Chennai | Movies in Bengaluru | Movies in Hyderabad | Movies in Pune | Movies in Ahmedabad | Movies in Kolkata | Movies in Kochi</h5>
+    <h4>COUNTRIES</h4>
+    <h5>Indonesia | Singapore | UAE | Sri Lanka | West Indies</h5>
+    <h4>HELP</h4>
+    <h5>About Us | Contact Us | Current Opening | Press Release | Press Coverage | Sitemap | FAQs | Terms and Conditions | Privacy Policy</h5>
+    <h4>GETMYSHOW EXCLUSIVES</h4>
+    <h5>Lollapalooza India | Superstar | BookASmile | Corporate Vouchers | Gift Cards | List My Show | Offers | Stream | Buzz | Movie Trailers | Summer Activites</h5>
+    <hr>
+    <a href="Get%20Myshow.html"><img src="getphotos\getmyshowlogo.png" alt="BookMyShow Logo" width="10%" height="5%" style="width:10%; display: block; margin-left: auto; margin-right: auto; padding: 0px; border-radius: 0;"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="getphotos\facebook.jpg" style="padding: 20px; font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 60px"><img src="getphotos\twitter.jpg" style="padding: 20px; font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 60px"><img src="getphotos\instagram.jpg" style="padding: 20px; font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 50px"><img src="getphotos\youtube.jpg" style="padding: 20px; font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 60px"><img src="getphotos\pinterest.jpg" style="padding: 20px; font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 60px"><img src="getphotos\linkedin.jpg" style="padding: 20px; font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 60px">
+    </footer>
+</html>
